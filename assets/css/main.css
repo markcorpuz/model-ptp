@@ -2039,7 +2039,7 @@ div.wpforms-container.one-line:after {
   background-color: #0080ff;
 }
 
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/archive.scss
+/* SETUP CHILD | 1.0.0 | 210120 | assets/scss/partials/archive.scss
 ---------------------------------------------------------------------------------------------------- */
 .archive .site-main {
   grid-row-gap: 32px;
@@ -2123,6 +2123,9 @@ div.wpforms-container.one-line:after {
       grid-column: 1/-1;
     }
   }
+}
+.archive .post-summary .item.image {
+  outline: 1px solid #eee;
 }
 
 .archive.content-sidebar .site-main {
@@ -3873,7 +3876,7 @@ a.shadow:link {
   box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.75);
 }
 
-/* SETUP-BE | 1.0.1 | 200701 | setup-be/ui/setup-be-101/border.scss
+/*  SETUP-CHILD | 1.0.0 | 210104 | setup-be/ui/setup-child-100/border.scss
 ---------------------------------------------------------------------------------------------------- */
 .border,
 .border-lightgray,
@@ -3882,7 +3885,7 @@ a.shadow:link {
   border: 1px solid;
 }
 
-.border-dashed {
+.border-darkgray.border-dashed, .border-gray.border-dashed, .border-lightgray.border-dashed, .border-dashed {
   border: 1px dashed;
 }
 
@@ -3890,17 +3893,39 @@ a.shadow:link {
   border: 0;
 }
 
-.border.border-lightgray,
-.border-dashed.border-lightgray {
+.border-lightgray.border-dashed, .border-lightgray {
   border-color: #EEEEEE;
 }
-.border.border-gray,
-.border-dashed.border-gray {
+
+.border-gray.border-dashed, .border-gray {
   border-color: #BDBDBD;
 }
-.border.border-darkgray,
-.border-dashed.border-darkgray {
+
+.border-darkgray.border-dashed, .border-darkgray {
   border-color: #424242;
+}
+
+.outline,
+.outline-lightgray,
+.outline-gray,
+.outline-darkgray {
+  outline: 1px solid;
+}
+
+.outline-darkgray.outline-dashed, .outline-gray.outline-dashed, .outline-lightgray.outline-dashed {
+  outline: 1px dashed;
+}
+
+.outline-lightgray.outline-dashed, .outline-lightgray {
+  outline-color: #EEEEEE;
+}
+
+.outline-gray.outline-dashed, .outline-gray {
+  outline-color: #BDBDBD;
+}
+
+.outline-darkgray.outline-dashed, .outline-darkgray {
+  outline-color: #424242;
 }
 
 /*  SETUP-CHILD | 1.0.0 | 201229 | setup-be/ui/setup-child-100/heading.scss
